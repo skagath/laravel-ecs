@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:438465160558:task-definition/laravelservices:12",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:438465160558:task-definition/laravelservices:15",
     "containerDefinitions": [
         {
             "name": "laravel",
-            "image": "438465160558.dkr.ecr.us-east-1.amazonaws.com/laravel:latest",
+            "image": "438465160558.dkr.ecr.us-east-1.amazonaws.com/laravel:7583ee",
             "cpu": 0,
             "portMappings": [
                 {
@@ -38,7 +38,7 @@
     "family": "laravelservices",
     "taskRoleArn": "arn:aws:iam::438465160558:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::438465160558:role/ecsTaskExecutionRole",
-    "revision": 12,
+    "revision": 15,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -82,7 +82,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-11-11T11:29:31.626Z",
-    "registeredBy": "arn:aws:iam::438465160558:root",
+    "registeredAt": "2024-11-11T12:25:15.080Z",
+    "registeredBy": "arn:aws:sts::438465160558:assumed-role/AWSCodePipelineServiceRole-us-east-1-wordpress/1731327914727",
     "tags": []
 }
