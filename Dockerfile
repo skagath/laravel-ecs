@@ -37,6 +37,6 @@ RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 775 /var/www/html/vendor
 
 
-EXPOSE 9999
+EXPOSE 80
 
 ENTRYPOINT ["/usr/local/bin/start.sh"]
