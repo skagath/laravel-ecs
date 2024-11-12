@@ -27,7 +27,7 @@ php artisan db:seed
 #npm i
 #npm run build
 chmod -R 777 /var/www/html/storage/*
-chmod -R 777 /var/www/html/public/build/*
+chmod -R 777 /var/www/html/public/*
 chmod -R 777 /var/www/html/storage/logs/laravel.log
 # Start Apache in the foreground
 apachectl -D FOREGROUND
