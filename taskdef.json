@@ -1,15 +1,15 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:438465160558:task-definition/laravelservices:15",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:438465160558:task-definition/tf-laravel:6",
     "containerDefinitions": [
         {
             "name": "laravel",
-            "image": "438465160558.dkr.ecr.us-east-1.amazonaws.com/laravel:7583ee",
+            "image": "438465160558.dkr.ecr.us-east-1.amazonaws.com/laravel:d1b17a",
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "laravel-8000-tcp",
+                    "name": "laravel-9999-tcp",
                     "containerPort": 9999,
-                    "hostPort": 9999,
+                    "hostPort": 0,
                     "protocol": "tcp",
                     "appProtocol": "http"
                 }
@@ -23,7 +23,7 @@
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
-                    "awslogs-group": "/ecs/laravelservices",
+                    "awslogs-group": "/ecs/tf-laravel",
                     "mode": "non-blocking",
                     "awslogs-create-group": "true",
                     "max-buffer-size": "25m",
@@ -35,10 +35,9 @@
             "systemControls": []
         }
     ],
-    "family": "laravelservices",
-    "taskRoleArn": "arn:aws:iam::438465160558:role/ecsTaskExecutionRole",
+    "family": "tf-laravel",
     "executionRoleArn": "arn:aws:iam::438465160558:role/ecsTaskExecutionRole",
-    "revision": 15,
+    "revision": 6,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -58,9 +57,6 @@
             "name": "com.amazonaws.ecs.capability.docker-remote-api.1.28"
         },
         {
-            "name": "com.amazonaws.ecs.capability.task-iam-role"
-        },
-        {
             "name": "ecs.capability.execution-role-ecr-pull"
         },
         {
@@ -77,12 +73,13 @@
     "requiresCompatibilities": [
         "EC2"
     ],
-    "memory": "1024",
+    "cpu": "1024",
+    "memory": "3072",
     "runtimePlatform": {
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-11-11T12:25:15.080Z",
-    "registeredBy": "arn:aws:sts::438465160558:assumed-role/AWSCodePipelineServiceRole-us-east-1-wordpress/1731327914727",
+    "registeredAt": "2024-11-12T04:36:00.854Z",
+    "registeredBy": "arn:aws:iam::438465160558:root",
     "tags": []
 }
