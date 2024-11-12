@@ -1,9 +1,9 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:438465160558:task-definition/mytf:4",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:438465160558:task-definition/mytf:5",
     "containerDefinitions": [
         {
             "name": "laravel",
-            "image": "438465160558.dkr.ecr.us-east-1.amazonaws.com/laravel:1e18b10",
+            "image": "438465160558.dkr.ecr.us-east-1.amazonaws.com/laravel:1e18b1",
             "cpu": 0,
             "portMappings": [
                 {
@@ -36,7 +36,7 @@
     "family": "mytf",
     "taskRoleArn": "arn:aws:iam::438465160558:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::438465160558:role/ecsTaskExecutionRole",
-    "revision": 4,
+    "revision": 5,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -78,7 +78,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-11-12T07:37:50.475Z",
+    "registeredAt": "2024-11-12T07:44:15.041Z",
     "registeredBy": "arn:aws:iam::438465160558:root",
     "tags": []
 }
