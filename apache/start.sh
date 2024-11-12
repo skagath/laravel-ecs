@@ -19,6 +19,9 @@ php artisan config:cache
 php artisan config:clear
 php artisan optimize:clear
 php artisan clear-compiled
+
+php artisan key:generate
+
 #composer dump-autoload
 php artisan migrate
  php artisan migrate:refresh --seed
